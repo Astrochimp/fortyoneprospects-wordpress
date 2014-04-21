@@ -2,6 +2,7 @@ wp-admin/
 wp-includes/
 wp-content/plugins/
 wp-content/uploads/
+wp-content/upgrade/
 wp-content/index.php
 index.php
 license.txt
