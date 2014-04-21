@@ -37,20 +37,20 @@ a {
 }
 
 
-header {
+#masthead, header.site-header {
     height:90px;
     background:#000000;
     color:#ffffff;
 }
 
-header h1 {
+header.site-header h1 {
     float:right;
     display:block;
     margin:5px 20px 5px 0px;
     padding:0px;
 }
 
-header h1 a {
+header.site-header h1 a {
     width:200px;
     height:63px;
 }
@@ -115,6 +115,29 @@ button:hover .submit-button:hover {
     background:#eeeeee;
 }
 
+.site-navigation {
+    float:right;
+
+}
+
+.menu {
+    list-style: none;
+}
+
+ul.nav-menu {
+    list-style: none;
+    margin:0px;
+    padding:0px;
+}
+
+li.page_item {
+    float:left;
+
+}
+
+li.page_item a {
+    color:#ffffff;
+}
 
 @media(min-width:767px) {
 
