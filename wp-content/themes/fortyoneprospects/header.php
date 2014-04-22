@@ -42,13 +42,13 @@
         
 		
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<h1 class="menu-toggle"><?php _e( 'Menu', 'fortyoneprospects' ); ?></h1>
+			<div class="menu-toggle"><?php _e( 'Menu', 'fortyoneprospects' ); ?></div>
 			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'fortyoneprospects' ); ?></a>
 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- #site-navigation -->
 
-		<h1><a href="#intro" class="page-scroll"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="41 Prospects" /></a></h1>
+		<div class="main-logo"><h1><a href="#intro" class="page-scroll"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="41 Prospects" /></a></h1></div>
  </header>
 
 <div id="page" class="hfeed site">
