@@ -12,12 +12,19 @@ font-family: 'Montserrat', sans-serif;
 
 body {
     background:#ffffff;
-    background:url(../images/lglogo.png) -20px 150px fixed no-repeat;
     text-align:center;
     font-family: 'Montserrat', sans-serif;
     font-size:12px;
+    margin:0px auto 0px auto;
 }
 
+body.home {
+    background:#ffffff url(../images/lglogo.png) -20px 150px fixed no-repeat;
+}
+
+body.page {
+
+}
 
 a {
     -webkit-transition: all .2s ease-in-out;
@@ -44,8 +51,11 @@ a {
 }
 
 .main-logo {
-    float:left;
-    margin:10px 20px 5px 10px;
+    position: absolute;
+    right:10px;
+    top:5px;
+    margin:0px;
+    padding:0px;
 }
 
 header.site-header h1 {
@@ -63,6 +73,7 @@ header.site-header h1 a {
 .menu-toggle {
     display:none;
 }
+
 
 section {
     width:640px;
@@ -87,6 +98,7 @@ h2 {
 h3 {
     font-family: 'Karla', sans-serif;
     font-size:20px;
+    text-transform: uppercase;
 }
 
 button, .submit-button {
@@ -123,16 +135,14 @@ button:hover .submit-button:hover {
 }
 
 .site-navigation {
-    float:right;
-
+ 
 }
 
 
 .main-navigation {
     float:right;
-    width:80%;
     height:50px;
-    margin:10px 0px 0px 0px;
+    margin:20px 250px 0px 0px;
     padding:0px;
 }
 
@@ -141,7 +151,7 @@ button:hover .submit-button:hover {
     list-style: none;
     height:50px;
     float:right;
-    margin:20px 0px 0px 0px;
+    margin:10px 0px 0px 0px;
     padding:0px;
 }
 
@@ -162,9 +172,14 @@ button:hover .submit-button:hover {
 
 .menu li a {
     color:#ffffff;
-    font:18px arial, helvetica, sans-serif;
+    font:14px 'Karla', arial, helvetica, sans-serif;
     padding:5px 10px 2px 10px;
     margin:0px;
+    text-transform: uppercase;
+}
+
+.column {
+    text-align: left;
 }
 
 @media(min-width:767px) {
@@ -172,6 +187,8 @@ button:hover .submit-button:hover {
 
 
 }
+
+
 
 
 .form-control {
@@ -271,9 +288,65 @@ input::-webkit-input-placeholder {
 
 }
 
+.screen-reader-text {
+    display:none;
+}
+
+.entry-content {
+    width:800px;
+    margin:100px auto 0px auto;
+}
+
+.page {
+    text-align: center;
+
+}
+
+.wpb_text_column {
+
+}
+
+.wpb_wrapper {
+    padding:3px;
+    margin:0px 5px 10px 0px;
+}
+
+.wpb_content_element {
+    text-align: left;
+    padding:5px;
+    margin:0px;
+
+}
+
+
+span.glyphicon {
+    font-size: 2em;
+}
+
+.aligncenter {
+    margin:0px auto 0px auto;
+    text-align: center;
+}
+
+.services {
+    padding:15px;
+    margin:40px 20px 20px 0px;
+    border-radius: 50%;
+    border:3px solid #000000;
+    float:left;
+}
+
+.servicedetail {
+    float:left;
+    margin:0px 0px 0px 5px;
+    margin-bottom: 50px !important;
+    padding:3px;
+    width:200px;
+}
+
 @media(min-width:320px) and (max-width:766px) {
 
-    body {
+    body, body.home {
         background:#ffffff;
     }
 
@@ -284,6 +357,17 @@ input::-webkit-input-placeholder {
         margin:100px auto 0px auto;
         padding:40px;
 
+    }
+
+    .entry-content {
+        width:100%;
+        margin:50px auto 50px auto;
+    }
+
+    .wpb_content_element {
+        text-align: left;
+        padding:10px;
+        margin:5px;
     }
 
 }
@@ -291,7 +375,7 @@ input::-webkit-input-placeholder {
 
 @media(min-width:767px) and (max-width:1000px){
 
-    body {
+    body, body.home {
         background:#ffffff;
     }
 
@@ -302,6 +386,11 @@ input::-webkit-input-placeholder {
         margin:100px auto 0px auto;
         padding:40px;
 
+    }
+
+
+    .entry-content {
+        width:700px;
     }
 
 }
@@ -310,6 +399,10 @@ input::-webkit-input-placeholder {
 
     body {
         background:#ffffff;
+
+    }
+
+    body.home {
         background:url(../images/lglogo.png) -20px 150px fixed no-repeat;
     }
 
@@ -321,6 +414,11 @@ input::-webkit-input-placeholder {
         margin:200px auto 0px 500px;
         padding:40px;
 
+    }
+
+
+    .entry-content {
+        width:800px;
     }
 }
 
@@ -348,11 +446,58 @@ input::-webkit-input-placeholder {
     margin:55px 0px 0px 0px;
     padding:100px auto 20px auto;
     height:200px;
-    background:#ccc;
+    background:#656668;
 }
 
 #page header h1 {
     padding:70px 0px 50px 0px;
 }   
 
+
+
+/* 
+    Visual composer layout classes
+*/
+
+
+
+.wpb_row {
+    margin:20px auto 20px auto;
+}
+
+
+.vc_row_fluid {
+
+}
+
+
+.site-footer {
+    background:#000000;
+    color:#ffffff;
+    height:250px;
+    padding:0px;
+    margin:0px;
+}
+
+.site-info {
+    width:960px;
+    margin:0px auto 0px auto;
+    padding:0px;
+}
+
+.getintouch {
+    float:left;
+    margin:20px 20px 20px 0px;
+    padding:0px;
+}
+
+.boilerplate {
+    float:right;
+    margin:20px 0px 20px 20px;
+    padding:0px;   
+}
+
+.icon-small {
+    font-size:.8em !important;
+}
 
