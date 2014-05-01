@@ -14,7 +14,7 @@ body {
     background:#ffffff;
     text-align:center;
     font-family: 'Montserrat', sans-serif;
-    font-size:12px;
+    font-size:14px;
     margin:0px auto 0px auto;
 }
 
@@ -46,6 +46,8 @@ a {
 
 #masthead, header.site-header {
     height:90px;
+    margin:0px;
+    padding:0px;
     background:#000000;
     color:#ffffff;
 }
@@ -90,6 +92,16 @@ h1 {
     font-size:42px;
 }
 
+.byline {
+    color:#ffffff;
+    font-size:12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin:-50px 0px 0px 0px;
+    padding:3px;
+}
+
 h2 {
     font-family: 'Oswald', sans-serif;
     font-size:36px;
@@ -101,9 +113,13 @@ h3 {
     text-transform: uppercase;
 }
 
-button, .submit-button {
+a.btn-lg, a.btn {
+    display: inline-block;
+}
+
+button, .submit-button, a.btn-lg, a.btn, input[type=submit] {
     font-family: 'Oswald', sans-serif;
-    font-size:28px;
+    font-size:18px;
     color:#ffffff;
     background:#999999;
     border:none;
@@ -113,6 +129,18 @@ button, .submit-button {
     transition: all .3s ease-in-out;
 }
 
+input[type=submit] {
+    padding: 10px 20px 10px 20px;
+    margin:5px;
+}
+
+
+a.btn-lg:hover {
+    background:#000000;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
 
 .btn {
     text-transform: uppercase;
@@ -137,6 +165,12 @@ button:hover .submit-button:hover {
 .site-navigation {
  
 }
+
+
+.slicknav_menu {
+    display:none;
+}
+
 
 
 .main-navigation {
@@ -189,14 +223,17 @@ button:hover .submit-button:hover {
 }
 
 
-
+h1.entry-title {
+    color:#ffffff;
+    font-weight: normal;
+}
 
 .form-control {
     margin:5px 0px 10px 0px;
     padding:0px;
 }
 
-input[type=text] {
+input[type=text], input[type=email], input[type=tel] {
 
     background:#999999 !important;
     color:#fff !important;
@@ -210,7 +247,11 @@ input[type=text] {
 input[type=text]:focus {
 
     border:1px solid #999999;
+    box-shadow: 2px 2px 0px #ff9900;
 }
+
+
+
 
 textarea {
     padding:10px;
@@ -341,10 +382,120 @@ span.glyphicon {
     margin:0px 0px 0px 5px;
     margin-bottom: 50px !important;
     padding:3px;
-    width:200px;
+    width:260px;
 }
 
-@media(min-width:320px) and (max-width:766px) {
+.sectionwrap {
+    width:100%;
+    background:#ffffff;
+    margin:0px;
+    padding:0px;
+}
+
+.fortyoneprefooter {
+    width:960px;
+    margin:0px auto 0px auto;
+    height:180px;
+    overflow:hidden;
+    background: #ffffff url(../images/41p_circle_logo.png) left 10px no-repeat;
+}
+
+.site-footer {
+    background:#000000;
+    color:#ffffff;
+    height:250px;
+    padding:0px;
+    margin:-20px 0px 0px 0px;
+}
+
+.site-info {
+    width:960px;
+    margin:0px auto 0px auto;
+    padding:0px;
+}
+
+
+
+.pagesection {
+    width:100%;
+    height:auto !important;
+    min-height:600px;
+    background:#ffffff;
+    margin:-10px 0px 0px 0px;
+    padding:30px 0px 30px 0px;
+    border-top:1px solid #999;
+}
+
+.pagesection  article {
+    width:90%;
+    margin:20px auto 20px auto;
+    padding:10px;
+}
+
+
+.getintouch {
+    float:left;
+    margin:20px 20px 20px 30px;
+    padding:0px;
+}
+
+.boilerplate {
+    float:right;
+    margin:20px 0px 20px 20px;
+    padding:0px;   
+}
+
+
+
+#page header {
+    margin:0px 0px 0px 0px;
+    padding:100px auto 20px auto;
+    height:200px;
+    background:#656668;
+}
+
+#page header h1 {
+    padding:70px 0px 50px 0px;
+} 
+
+
+#page {
+
+    margin:0px 0px 0px 0px;
+    padding:0px;
+
+}  
+
+footer a {
+    color:#ffffff;
+
+}
+
+.footer-link {
+    font-size:12px;
+}
+
+
+
+/* 
+
+    Media Queries
+    
+*/
+
+
+@media (max-width:766px) {
+
+
+
+
+    .menu {
+        display:none;
+    }
+    
+    .slicknav_menu {
+        display:block;
+    }
 
     body, body.home {
         background:#ffffff;
@@ -354,14 +505,28 @@ span.glyphicon {
         width:100%;
 
         text-align:left;
-        margin:100px auto 0px auto;
+        margin:50px auto 0px auto;
         padding:40px;
 
     }
 
+
+    #page {
+
+        margin:90px 0px 0px 0px;
+        padding:0px;
+
+    }
+
+    .featuresection {
+        margin:50px auto 0px auto;
+    }
+
+
+
     .entry-content {
         width:100%;
-        margin:50px auto 50px auto;
+        margin:0px auto 50px auto;
     }
 
     .wpb_content_element {
@@ -370,13 +535,186 @@ span.glyphicon {
         margin:5px;
     }
 
+    .pagesection article {
+        width:100%;
+        padding:5px;
+        margin:0px;
+    }
+
+    .site-info {
+        width:100%;
+        margin:10px auto 10px auto;
+        padding:5px;
+    }
+
+    .servicedetail {
+        width:180px;
+        margin:0px;
+        padding:5px;
+    }
+
+    .services {
+        margin: 20px 5px 20px 0px;
+
+    }
+
+    .fortyoneprefooter {
+        width:90%;
+
+    }
+
+    .getintouch {
+        float:none;
+        margin:20px 20px 20px 0px;
+        padding:10px;
+    }
+
+    .boilerplate {
+        float:none;
+        margin:20px 0px 20px 20px;
+        padding:10px;   
+    }
+
+    .btn-lg {
+        margin: 5px;
+    }
+
 }
 
 
-@media(min-width:767px) and (max-width:1000px){
+@media(max-width:420px)  {
+
+    
+
+    .menu {
+        display:none;
+    }
+    
+    .slicknav_menu {
+        display:block;
+    }
 
     body, body.home {
         background:#ffffff;
+        overflow-x: hidden; 
+    }
+
+    h1 {
+        font-size:35px;
+    }
+
+    section {
+        width:100%;
+
+        text-align:left;
+        margin:50px auto 0px auto;
+        padding:40px;
+
+    }
+
+
+    #page {
+
+        margin:90px 0px 0px 0px;
+        padding:0px;
+
+    }
+
+    .featuresection {
+        margin:50px auto 0px auto;
+    }
+
+
+
+    .entry-content {
+        width:100%;
+        margin:0px auto 50px auto;
+    }
+
+    .wpb_content_element {
+        text-align: left;
+        padding:10px;
+        margin:5px;
+    }
+
+    .pagesection article {
+        width:100%;
+        padding:5px;
+        margin:0px;
+    }
+
+    .site-info {
+        width:100%;
+        margin:10px auto 10px auto;
+        padding:5px;
+    }
+
+    .servicedetail {
+        width:180px;
+        margin:0px;
+        padding:5px;
+    }
+
+    .services {
+        margin: 20px 5px 20px 0px;
+
+    }
+
+    .fortyoneprefooter {
+        width:90%;
+        background: #ffffff url(../images/41p_circle_logo.png) center 10px no-repeat;
+
+    }
+
+
+    .getintouch {
+        float:none;
+        margin:20px 20px 20px 0px;
+        padding:10px;
+    }
+
+    .boilerplate {
+        float:none;
+        margin:20px 0px 20px 20px;
+        padding:10px;   
+    }
+
+    .btn-lg {
+        margin: 5px;
+    }
+
+}
+
+@media(min-width:767px) and (max-width:1000px){
+
+    .menu {
+        display:block;
+    }
+    
+    .slicknav_menu {
+        display:none;
+    }
+
+    body, body.home {
+        background:#ffffff;
+    }
+
+
+    .featuresection {
+        width:90%;
+        height:800px;
+
+        text-align:left;
+        margin:130px auto 0px auto;
+        padding:40px;
+
+    }
+
+    #page {
+
+        margin:90px 0px 0px 0px;
+        padding:0px;
+
     }
 
     section {
@@ -393,9 +731,31 @@ span.glyphicon {
         width:700px;
     }
 
+    .pagesection article {
+        width:100%;
+        padding:5px;
+        margin:0px;
+    }
+
+
+    .site-info {
+        width:100%;
+        margin:10px auto 10px auto;
+        padding:5px;
+    }
+
+
 }
 
 @media(min-width:1000px) {
+
+    .menu {
+        display:block;
+    }
+    
+    .slicknav_menu {
+        display:none;
+    }
 
     body {
         background:#ffffff;
@@ -406,21 +766,38 @@ span.glyphicon {
         background:url(../images/lglogo.png) -20px 150px fixed no-repeat;
     }
 
-    section {
-        width:640px;
+    .featuresection {
+        width:590px;
         height:800px;
 
         text-align:left;
-        margin:200px auto 0px 500px;
+        margin:130px auto 0px 400px;
         padding:40px;
 
     }
 
 
-    .entry-content {
-        width:800px;
+    #page {
+
+        margin:90px 0px 0px 0px;
+        padding:0px;
+
     }
+
+    .entry-content {
+        width:900px;
+        margin:0px auto 0px auto;
+    }
+
+    .site-info {
+        width:960px;
+        margin:10px auto 10px auto;
+        padding:5px;
+    }
+
+
 }
+
 
 
 .clearfix:after {
@@ -435,23 +812,7 @@ span.glyphicon {
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
 
-#page {
 
-    margin:0px 0px 0px 0px;
-    padding:0px;
-
-}
-
-#page header {
-    margin:55px 0px 0px 0px;
-    padding:100px auto 20px auto;
-    height:200px;
-    background:#656668;
-}
-
-#page header h1 {
-    padding:70px 0px 50px 0px;
-}   
 
 
 
@@ -471,31 +832,8 @@ span.glyphicon {
 }
 
 
-.site-footer {
-    background:#000000;
-    color:#ffffff;
-    height:250px;
-    padding:0px;
-    margin:0px;
-}
 
-.site-info {
-    width:960px;
-    margin:0px auto 0px auto;
-    padding:0px;
-}
 
-.getintouch {
-    float:left;
-    margin:20px 20px 20px 0px;
-    padding:0px;
-}
-
-.boilerplate {
-    float:right;
-    margin:20px 0px 20px 20px;
-    padding:0px;   
-}
 
 .icon-small {
     font-size:.8em !important;

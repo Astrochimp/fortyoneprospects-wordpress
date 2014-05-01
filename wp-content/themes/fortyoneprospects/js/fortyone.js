@@ -31,3 +31,10 @@ $(function() {
         event.preventDefault();
     });
 });
+
+
+
+$(document).ready(function(){
+    $('.menu').slicknav();
+});
+

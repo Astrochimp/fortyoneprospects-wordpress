@@ -7,20 +7,23 @@
  * @package fortyoneprospects
  */
 ?>
+<div class="sectionwrap">
 
-	</div><!-- #content -->
+	<div class="fortyoneprefooter">
 
+	</div>
+</div>
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info clearfix">
 			
 			<div class="getintouch">
 
  
-				 <button type="button" class="btn-lg" href="/contact"><span class="glyphicon glyphicon-arrow-right icon-small"></span> Get in Touch</button>
+				 <a class="btn-lg" href="/contact-us"><span class="glyphicon glyphicon-arrow-right icon-small"></span> Get in Touch</a>
 				 
 				 <br />
 
-				 SEEN ENOUGH? EMAIL US!
+				 <a class="footer-link" href="/contact-us">SEEN ENOUGH? EMAIL US!</a>
 
 			</div>
 
@@ -31,7 +34,6 @@
 			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
-</div><!-- #page -->
 
 <?php wp_footer(); ?>
 

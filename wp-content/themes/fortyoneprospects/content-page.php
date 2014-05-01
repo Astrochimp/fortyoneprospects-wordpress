@@ -6,19 +6,29 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
-	</header><!-- .entry-header -->
+<div id="page" class="hfeed site">
 
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'fortyoneprospects' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-	<?php edit_post_link( __( 'Edit', 'fortyoneprospects' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer>' ); ?>
-</article><!-- #post-## -->
+	<div id="content" class="site-content">
+
+
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<header class="entry-header">
+				<h1 class="entry-title"><?php the_title(); ?></h1>
+				
+				<div class="byline"><?php echo get_post_meta($post->ID, "byline", true); ?></div>
+
+			</header><!-- .entry-header -->
+
+			<div class="entry-content">
+				<?php the_content(); ?>
+				<?php
+					wp_link_pages( array(
+						'before' => '<div class="page-links">' . __( 'Pages:', 'fortyoneprospects' ),
+						'after'  => '</div>',
+					) );
+				?>
+			</div><!-- .entry-content -->
+			<?php edit_post_link( __( 'Edit', 'fortyoneprospects' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer>' ); ?>
+		</article><!-- #post-## -->
+	</div>
+</div>
